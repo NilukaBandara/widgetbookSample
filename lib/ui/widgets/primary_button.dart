@@ -48,6 +48,8 @@ class PrimaryButton extends StatelessWidget {
               style: AppTheme.of(context).typography.label.copyWith(
                     color: AppTheme.of(context).text.inverse,
                   ),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
             ),
             if (trailing != null)
               Row(
